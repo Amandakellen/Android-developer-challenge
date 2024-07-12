@@ -50,7 +50,7 @@ fun VideoPlayerScreen(
             exoPlayer?.release()
         }
     }
-    
+
     Scaffold(
         topBar = {
             TopAppBar(
