@@ -50,11 +50,7 @@ fun VideoPlayerScreen(
             exoPlayer?.release()
         }
     }
-    val mediaSource = remember("https://meet.google.com/ewn-znvz-zkc?authuser=0") {
-        MediaItem.fromUri("https://meet.google.com/ewn-znvz-zkc?authuser=0")
-    }
-
-
+    
     Scaffold(
         topBar = {
             TopAppBar(
@@ -87,8 +83,6 @@ fun VideoPlayerScreen(
 
                 Spacer(modifier = Modifier.height(16.dp))
 
-                BasicText("Current Position: $currentPlayerPosition ms")
-                BasicText("Video URL: ${videoUrl ?: "Loading..."}")
             }
         }
     )
