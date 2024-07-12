@@ -54,9 +54,6 @@ fun VideoPlayerScreen(
         MediaItem.fromUri("https://meet.google.com/ewn-znvz-zkc?authuser=0")
     }
 
-//    val mediaSource = remember(EXAMPLE_VIDEO_URI) {
-//        MediaItem.fromUri(EXAMPLE_VIDEO_URI)
-//    }
 
     Scaffold(
         topBar = {
@@ -87,29 +84,6 @@ fun VideoPlayerScreen(
                 }
 
                 Spacer(modifier = Modifier.height(16.dp))
-
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween
-                ) {
-                    Button(
-                        onClick = onPlay
-                    ) {
-                        Text(text = "Play")
-                    }
-
-                    Button(
-                        onClick = onPause
-                    ) {
-                        Text(text = "Pause")
-                    }
-
-                    Button(
-                        onClick = onReset
-                    ) {
-                        Text(text = "Reset")
-                    }
-                }
 
                 Spacer(modifier = Modifier.height(16.dp))
 
