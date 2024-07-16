@@ -1,4 +1,4 @@
-package com.example.desafio.presentation.di
+package com.example.desafio.di
 
 import com.example.desafio.domain.repository.VideoURLRepository
 import com.example.desafio.presentation.view.viewmodel.VideoPlayerViewModel

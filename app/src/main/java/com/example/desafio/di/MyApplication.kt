@@ -1,4 +1,4 @@
-package com.example.desafio.presentation.di
+package com.example.desafio.di
 
 import android.app.Application
 import org.koin.android.ext.koin.androidContext
