@@ -41,6 +41,13 @@ class VideoPlayerViewModel(private val repository: VideoURLRepository) : ViewMod
     fun updateLocation(latitude: Double, longitude: Double) {
         _currentLatitude.value = latitude
         _currentLongitude.value = longitude
+
+        if (_currentLatitude.value != _initLatitude.value ||
+            _currentLongitude.value != _initLongitude.value
+        ) {
+            resetPlayer()
+            setPlaying(true, _currentLatitude.value!!, _currentLongitude.value!!)
+        }
     }
 
     fun resetPlayer() {
